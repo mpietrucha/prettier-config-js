@@ -1,0 +1,30 @@
+{
+    "name": "@mpietrucha/prettier-config",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Michał Pietrucha",
+        "email": "michal.pietrucha@off-site.pl"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "unbuild": "^2.0.0"
+    },
+    "dependencies": {
+        "prettier": "^3.4.1",
+        "prettier-plugin-organize-imports": "^4.1.0",
+        "prettier-plugin-packagejson": "^2.5.6",
+        "prettier-plugin-tailwindcss": "^0.6.9"
+    }
+}
