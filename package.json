@@ -1,6 +1,6 @@
 {
     "name": "@mpietrucha/prettier-config",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "repository": "mpietrucha/prettier-config",
     "license": "MIT",
     "author": {
@@ -19,6 +19,9 @@
     "files": [
         "dist"
     ],
+    "scripts": {
+        "prettier": "npx prettier . --write --config src/index.js"
+    },
     "dependencies": {
         "prettier": "^3.4.1",
         "prettier-plugin-organize-imports": "^4.1.0",
