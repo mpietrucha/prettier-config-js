@@ -20,6 +20,7 @@
         "dist"
     ],
     "scripts": {
+        "deploy": "npm run prettier && npm version patch --force && npx unbuild && npm publish",
         "prettier": "npx prettier . --write --config src/index.js"
     },
     "dependencies": {
