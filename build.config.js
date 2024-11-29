@@ -5,7 +5,7 @@ export default defineBuildConfig({
     declaration: false,
     rollup: {
         inlineDependencies: true,
-        output: { exports: 'named' },
+        output: { exports: 'default' },
     },
     alias: { '~': __dirname, '@': resolve(__dirname, 'src') },
 })
