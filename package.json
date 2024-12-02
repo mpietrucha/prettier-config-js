@@ -1,6 +1,6 @@
 {
     "name": "@mpietrucha/prettier-config",
-    "version": "0.0.10",
+    "version": "1.0.0",
     "repository": "mpietrucha/prettier-config",
     "license": "MIT",
     "author": {
@@ -20,11 +20,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "npx unbuild",
-        "bump": "npm version patch --force",
-        "deploy": "npm run prettier && npm run bump && npm run build && npm run publish",
-        "prettier": "npx prettier . --write --config src/index.js",
-        "publish": "npm publish && git push --tags && git push origin"
+        "prettier": "npx prettier . --write --config src/index.js"
     },
     "dependencies": {
         "prettier": "^3.4.1",
