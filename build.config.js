@@ -1,11 +1,17 @@
 import { resolve } from 'path'
 import { defineBuildConfig } from 'unbuild'
 
-export default defineBuildConfig({
-    declaration: false,
-    rollup: {
-        inlineDependencies: true,
-        output: { exports: 'default' },
-    },
-    alias: { '~': __dirname, '@': resolve(__dirname, 'src') },
-})
+export const alias = {
+    '@': resolve('src'),
+    '@test': resolve('__tests__'),
+    '@composables': resolve('src/composables')
+}
+
+export const rollup = {
+    inlineDependencies: true,
+    output: { exports: 'default' },
+}
+
+export const declaration = false
+
+export default defineBuildConfig({ alias, rollup, declaration })
