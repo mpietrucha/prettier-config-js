@@ -29,6 +29,7 @@
         "prettier-plugin-tailwindcss": "^0.6.9"
     },
     "devDependencies": {
-        "unbuild": "^3.0.1"
+        "unbuild": "^3.0.1",
+        "vitest": "^2.1.8"
     }
 }

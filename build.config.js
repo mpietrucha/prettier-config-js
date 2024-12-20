@@ -3,7 +3,6 @@ import { defineBuildConfig } from 'unbuild'
 
 export const alias = {
     '@': resolve('src'),
-    '@composables': resolve('src/composables')
 }
 
 export const rollup = {
